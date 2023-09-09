@@ -1,0 +1,111 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  
+body{
+    background:linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+
+}
+
+
+
+ul {
+    list-style: none;
+  }
+  li {
+    margin: 0.25rem 0;
+  }
+  
+  a.underline-hover-effect {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .underline-hover-effect {
+    display: inline-block;
+    padding-bottom: 0.10rem; /* defines the space between text and underline */
+    position: relative;
+  }
+  
+  .underline-hover-effect::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(36, 33, 33);
+    transition: width 0.50s ease-out;
+  }
+  .underline-hover-effect:hover::before {
+    width: 100%;
+  }
+
+.carousel-inner{
+    margin-top: 25px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.car-img{
+    height: 600px;
+    width: 100%;
+    margin-top: 0%;
+
+}
+
+.car3{
+  color: aliceblue;
+}
+.logo{
+    position: fixed;
+    margin-right:90%;
+    height: 70px;
+    width: auto;
+}
+
+.potrait{
+  margin-left: auto;
+  height: 100px;
+  width: auto;
+  border-radius: 100%;
+}
+
+.arrow{
+  width:20px;
+  height: auto;
+}
+
+.name{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.ahref{
+  text-decoration-line: none;
+  color: black;
+}
+
+.headings{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  
+}
+
+.socials{
+  height: 33px;
+  width:auto;
+}
+
+#music-player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #000;
+}
+
